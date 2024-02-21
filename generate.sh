@@ -4,7 +4,7 @@ ROOTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 $ROOTDIR/scripts/import-repo
 
 # get gitops templates
-REPO='https://github.com/redhat-appstudio/tssc-sample-gitops'
+REPO='https://github.com/tap-myocp/tssc-sample-gitops'
 REPONAME=$(basename $REPO)
 
 TEMPDIR=$ROOTDIR/temp

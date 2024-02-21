@@ -1,0 +1,14 @@
+kind: KafkaTopic
+apiVersion: kafka.strimzi.io/v1beta2
+metadata:
+  name: demo-topic
+  labels:
+    strimzi.io/cluster: my-cluster
+  namespace: demo
+spec:
+  partitions: 1
+  replicas: 1
+  config:
+    retention.ms: 604800000
+    segment.bytes: 1073741824
+
